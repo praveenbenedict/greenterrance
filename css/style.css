@@ -1,0 +1,271 @@
+/*General Styles*/
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.vertical-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content : center;
+    text-align : center;
+}
+.background-image{
+    background-repeat : no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.green-font{
+    color: #a0c715;
+}
+
+.navbar {
+    
+      border : none;
+    
+}
+    
+.navbar-brand {
+    
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        color:white!important;
+    
+}
+
+header{
+    height: 100vh;
+    width : 100%;
+    top : 0px;
+    background: url(../img/landing.jpeg);
+    color: white;
+}
+
+#about {
+    background-color: white;
+    padding: 30px;
+}
+#about span{
+    color: #a0c715;
+}
+#about h4{
+    color:#a0c715;
+}
+
+/* WHY US */
+#why-us{
+    padding: 0px;
+}
+#why-us h4, #services h4{
+    font-size: 24px;
+}
+.feature {
+    height: 40vh;
+    color: white;
+}
+.support{
+    background-image: url(../img/support.jpeg);
+}
+
+.expert{
+    background-image: url(../img/expert.jpeg);
+}
+.success{
+    background-image: url(../img/success.jpeg);
+}
+.tested{
+    background-image: url(../img/tested.jpeg);
+}
+
+
+ /* #services{
+    background: #a1ffce;
+    background: -webkit-linear-gradient(to right, #a1ffce, #faffd1); 
+    background: linear-gradient(to right, #a1ffce, #faffd1); 
+}  */
+.services{
+    background-color: #222222;
+    background-image: url(../img/services.jpg); 
+    padding: 50px;   
+}
+.services .section-heading{
+    font-weight: bolder;
+    color:white;
+    padding: 20px;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content : center;
+    text-align : center;
+    min-height: 30vh;
+    background-color: aquamarine;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.terrace-landscaping{
+    background-image: url(../img/landscaping.jpg);
+}
+
+.maintenance{
+    background-image: url(../img/maintenance.jpeg);
+}
+.fruit{
+    background-image: url(../img/fruit-trees.jpg);
+}
+.fertilizers{
+    background-image : url(../img/fertilizers.jpg);
+}
+.thamboolam {
+    background-image : url(../img/thamboolam.jpg);
+}
+
+/* Passion */
+#passion{
+    background-color: #9cc623; 
+    padding: 30px;
+}
+
+#contact{
+    /* background-color: #525252;  
+    background-color: -webkit-linear-gradient(to right, #3d72b4, #525252);  
+    background-color: linear-gradient(to right, #3d72b4, #525252);     */
+    background-image: url(../img/book-bg.jpg); 
+    background-size:cover;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+#contact .heading{
+    margin-bottom: 20px;
+    color: white;
+}
+#contact .background-fixer{
+    position: relative;
+    width:100%;
+    height:100%;
+    z-index:-999;
+}
+#contact .social{
+    margin-bottom: 10px;
+}
+#contact .fa{
+    color:white;
+    font-size:25px;
+    margin: 5px;
+}
+#contact a{
+    color:white;
+    text-decoration: underline;
+}
+.footer{
+    background-color: black;
+}
+.footer p{
+    color: white;
+    padding: 7px;
+}
+
+input[type="text"],
+input[type="telephone"],
+input[type="email"],
+input[type="number"],
+input[type="date"]{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    border: 1px solid white;
+    background: transparent;
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+input[type="submit"]{
+    border-radius: 0px;
+    border: 1px solid white;
+    background: transparent;
+    width: 60%;
+    color: white;
+}
+
+@media screen and (min-width : 769px) {
+    
+    
+        .service {
+    
+            margin-bottom : 50px;
+    
+        }
+    
+        .navbar-custom {
+    
+            height: 80px;
+            background: transparent !important;
+    
+        }
+    
+        nav a {
+    
+            background: transparent !important;
+    
+        }
+    
+        .navbar-custom .navbar-brand{
+    
+            margin-top : 20px;
+            font-size : 30px;
+            padding : 10px;
+            transition: all ease .5s;
+    
+        }
+    
+        .navbar-custom .nav {
+    
+            margin-top : 15px;
+    
+        }
+    
+        .navbar-fade {
+    
+            height: 50px;
+            background: black;
+        }
+    
+        .navbar-fade .navbar-brand {
+    
+    
+        }
+    
+    
+    
+    }
+    
+
+@media screen and (max-width: 768px) {
+    
+    .navbar{
+        
+                opacity: 1;
+        
+    }
+
+    .services{
+        padding: 0px;
+        padding-bottom : 40px;
+    }
+    .visible-xs{
+        width:100% !important;
+        padding: 0px;
+    }
+    .service{
+        height: 50vh;
+        width: 90%;
+        margin-left: 5%;
+        float: left;
+    }
+}
